@@ -21,10 +21,10 @@ alpha=np.array([0,0,90,180,270])#[deg] azimuth angles
 beta=np.array([90,62,62,62,62])#[deg] elevation angles
 scan_type='DBS'
 
-#Example 2: regular six-beam scan
-alpha=np.array([0,0,72,144,216,288])#[deg] azimuth angles
-beta=np.array([90,45,45,45,45,45])#[deg] elevation angles
-scan_type='six-beam'
+# #Example 2: regular six-beam scan
+# alpha=np.array([0,0,72,144,216,288])#[deg] azimuth angles
+# beta=np.array([90,45,45,45,45,45])#[deg] elevation angles
+# scan_type='six-beam'
 
 RS_index={0:[0,0],1:[1,1],2:[2,2],3:[0,1],4:[0,2],5:[1,2]}#Reynolds stress index
 

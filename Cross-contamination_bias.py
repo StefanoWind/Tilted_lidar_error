@@ -15,8 +15,14 @@ matplotlib.rcParams['mathtext.fontset'] = 'cm'
 matplotlib.rcParams['font.size'] = 16
 
 #%% Inputs
+
+#Example 1: regular DBS
 alpha=np.array([0,0,90,180,270])#[deg] azimuth angles
 beta=np.array([90,62,62,62,62])#[deg] elevation angles
+
+# #Example 2: severely inclined DBS
+# alpha=np.array([0,0,19.1,340.9])#[deg] azimuth angles
+# beta=np.array([25.9,45,31.7,31.7])#[deg] elevation angles
 
 RS=np.array([[1,0,-0.1],
              [0,0.7,0],
