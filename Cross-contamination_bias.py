@@ -29,13 +29,15 @@ RS_names=[r'$\overline{U^\prime U^\prime}$',
           r'$\overline{W^\prime W^\prime}$',
           r'$\overline{U^\prime V^\prime}$',
           r'$\overline{U^\prime W^\prime}$',
-          r'$\overline{V^\prime W^\prime}$']
+          r'$\overline{V^\prime W^\prime}$']#names of Reynolds stresses (for plotting)
 
 #%% Initialization
-bias=np.zeros(6)
+assert len(alpha)==len(beta), 'Number of azimuths does not much number of elevations'
+
 Nb=len(alpha)
 
-assert len(alpha)==len(beta), 'Number of azimuths does not much number of elevations'
+#zeroing
+bias=np.zeros(6)
 
 #%% Main
 
@@ -87,3 +89,4 @@ plt.bar(RS_names,bias,color='k')
 plt.ylabel(r'$\Delta \Sigma_i$ [m s$^{-1}$]')
 plt.grid()
 plt.title('Cross-contamination bias')
+plt.tight_layout()
