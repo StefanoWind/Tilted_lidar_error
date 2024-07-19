@@ -32,7 +32,7 @@ RS_names=[r'$\overline{U^\prime U^\prime}$',
           r'$\overline{V^\prime W^\prime}$']#names of Reynolds stresses (for plotting)
 
 #%% Initialization
-assert len(alpha)==len(beta), 'Number of azimuths does not much number of elevations'
+assert len(alpha)==len(beta), 'Number of azimuths does not match number of elevations'
 
 Nb=len(alpha)
 

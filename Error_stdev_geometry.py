@@ -38,7 +38,7 @@ RS_names=[r'$\overline{U^\prime U^\prime}$',
           r'$\overline{V^\prime W^\prime}$']#names of Reynolds stresses (for plotting)
 
 #%% Initialization
-assert len(alpha)==len(beta), 'Number of azimuths does not much number of elevations'
+assert len(alpha)==len(beta), 'Number of azimuths does not match number of elevations'
 assert (scan_type=='six-beam' and len(alpha)==6) or scan_type=='DBS', 'Six-beam scan must include six azimuths and elevations'
 
 Nb=len(alpha)
